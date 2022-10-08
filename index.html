@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+    <title>Portfolio | Abdulla Shahzan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <div class="mynavbar">
+        <div class="logo"><span><a>"Hello, world!"</a></span></div>
+        <div class="contents">
+            <ul>
+                <li><a href="" class="hover-underline-animation">Education</a></li>
+                <li><a href="" class="hover-underline-animation">Projects</a></li>
+                <li><a href="" class="hover-underline-animation contactme">Contact me</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="container1">
+        <div class="displaycontainer">
+            <div class="iam">I'm a&nbsp;</div>
+            <div class="text"></div>
+        </div>
+        <div class="cv"><a href="">DOWNLOAD CV</a></div>
+    </div>
+
+    <div class="container2">
+        <div class="bg-gradient_solid">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Education</h2>
+                    <hr>
+                </div>
+                <div class="steps">
+                    <div class="steps-container">
+                        <div class="content reveal">
+                            <h2>Graduated From Highschool</h2>
+                            <p>Finished my early education with final GPA of 4.7 and started doing community work.</p>
+                        </div>
+                        <i class="step-line reveal"></i>
+                        <div class="date">2021</div>
+                    </div>
+                    <div class="steps-container">
+                        <div class="content reveal">
+                            <h2>Started Studying my Bachelor's at KKU</h2>
+                            <p>Got accepted into the university and kept on progressing with my knowledge in computer engineering.</p>
+                        </div>
+                        <i class="step-line reveal"></i>
+                        <div class="date">2022</div>
+                    </div>
+                    <div class="steps-container">
+                        <div class="content reveal">
+                            <h2>Graduated with Bachelor's in Computer Engineering Degree</h2>
+                            <p>Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto
+                                mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit
+                                voluptua dignissim per, habeo iusto primis ea eam.</p>
+                        </div>
+                        <i class="step-line reveal"></i>
+                        <div class="date">2027</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="area">
+        <ul class="circles">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+    <!--Loading screen-->
+    <div class="loadingScreen">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            style="margin: auto; background: none; display: block; shape-rendering: auto;" width="200px" height="200px"
+            viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <path fill="none" stroke="#e90c59" stroke-width="6" stroke-dasharray="42.76482137044271 42.76482137044271"
+                d="M24.3 30C11.4 30 5 43.3 5 50s6.4 20 19.3 20c19.3 0 32.1-40 51.4-40 C88.6 30 95 43.3 95 50s-6.4 20-19.3 20C56.4 70 43.6 30 24.3 30z"
+                stroke-linecap="round" style="transform:scale(0.8200000000000001);transform-origin:50px 50px">
+                <animate attributeName="stroke-dashoffset" repeatCount="indefinite" dur="2.127659574468085s"
+                    keyTimes="0;1" values="0;256.58892822265625"></animate>
+            </path>
+        </svg>
+    </div>
+
+    <script>
+        var typing = new Typed(".text", {
+            strings: ["", "Web Designer", "Software Developer", "Computer Engineer", "Web Developer"],
+            typeSpeed: 100,
+            backSpeed: 40,
+            loop: true,
+        });
+    </script>
+    <script src="script.js"></script>
+    <script>
+        $(window).on("load", function () {
+            $(".loadingScreen").fadeOut("slow");
+        });
+    </script>
+</body>
+
+</html>
