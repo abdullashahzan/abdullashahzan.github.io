@@ -299,7 +299,7 @@ html {
 }
 
 .container4 {
-    min-height: 130vh;
+    min-height: 90vh;
     height: auto;
     width: 100%;
     background: var(--primary-gradient);
@@ -535,3 +535,29 @@ html {
 .contact {
     background-color: #1d1f20;
 }
+
+.container3 {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    background-color: #1d1f20;
+}
+
+.container3 h1 {
+    color: #E30B5C;
+    padding: 3rem;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.container3 .card {
+    margin: 2vw;
+    background-color: #454a4d54;
+    color: whitesmoke;
+}
+
+.container3 .card a {
+    text-decoration: none;
+    color: #E30B5C;
+}
+
