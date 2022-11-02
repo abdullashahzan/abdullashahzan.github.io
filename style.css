@@ -28,7 +28,6 @@ html {
     letter-spacing: 2px;
     font-weight: lighter;
     color: rgb(185, 185, 185);
-    font-size: 2.7vw;
     padding: 0.7vw 1vw;
     animation: fade-in 1s ease-in;
     animation: blinking 3s linear infinite;
@@ -166,7 +165,7 @@ html {
 }
 
 .cv a {
-    color: pink;
+    color: whitesmoke;
     padding: 1vw 3vw;
     border: 2px solid #E30B5C;
     text-decoration: none;
@@ -184,6 +183,18 @@ html {
     font-size: 5vw;
     color: #E30B5C;
 }
+
+@media (max-width: 390px) {
+    .iam {
+        font-size: 8vw;
+    }
+    .text {
+        font-size: 8vw;
+    }
+    .typed-cursor {
+        font-size: 8vw;
+    }
+  }
 
 .circles {
     position: absolute;
@@ -299,7 +310,7 @@ html {
 }
 
 .container4 {
-    min-height: 90vh;
+    min-height: 100vh;
     height: auto;
     width: 100%;
     background: var(--primary-gradient);
@@ -315,7 +326,6 @@ html {
 }
 
 .section-header h2 {
-    font-size: 3vw;
     font-weight: lighter;
     letter-spacing: 1px;
     margin-bottom: 16px;
@@ -340,7 +350,7 @@ html {
     content: "";
     position: absolute;
     width: 1px;
-    background-color: white;
+    background-color: #fff;
     opacity: 0.4;
     top: 0;
     bottom: 0;
@@ -467,7 +477,6 @@ html {
 
 .container2 .row .card-title {
     color: #E30B5C;
-    font-size: 2vw;
 }
 
 .skillcontainer {
