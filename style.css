@@ -31,7 +31,7 @@ html {
     padding: 0.7vw 1vw;
     animation: fade-in 1s ease-in;
     animation: blinking 3s linear infinite;
-
+    font-size: 4rem;
 }
 
 @keyframes blinking {
@@ -52,8 +52,7 @@ html {
 }
 
 .mynavbar .logo:hover::before {
-    content: "Abdulla Shahzan";
-    cursor: pointer;
+    content: "Peek-a-boo!";
 }
 
 .contents {
@@ -188,13 +187,15 @@ html {
     .iam {
         font-size: 8vw;
     }
+
     .text {
         font-size: 8vw;
     }
+
     .typed-cursor {
         font-size: 8vw;
     }
-  }
+}
 
 .circles {
     position: absolute;
@@ -316,6 +317,11 @@ html {
     background: var(--primary-gradient);
 }
 
+.container4 h1 {
+    padding: 2rem;
+    text-align: center;
+}
+
 :root {
     --primary: #1d1f20;
     --primary-gradient: linear-gradient(to bottom, #1d1f20 0%, #E30B5C 100%);
@@ -364,8 +370,9 @@ html {
 
 .steps .content h2 {
     font-weight: 600;
-    font-size: 16px;
-    color: #676767;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: #464646;
 }
 
 .steps-container {
@@ -376,10 +383,15 @@ html {
 
 .steps-container .content {
     padding: 32px;
-    background-color: white;
+    background-color: rgba(245, 245, 245, 0.2);
     position: relative;
     border-radius: 0px 0px 80px 0px;
     box-shadow: 0px 16px 27px rgb(0 11 30 / 10%);
+    z-index: 501;
+}
+
+.steps-container .content h2 {
+    color: whitesmoke;
 }
 
 .steps .steps-container:nth-child(even) {
@@ -392,8 +404,7 @@ html {
 }
 
 .steps .steps-container .date {
-    font-weight: 900;
-    font-size: 16px;
+    font-size: 12px;
     color: #ffffff;
     margin-bottom: 10px;
     width: 62px;
@@ -404,7 +415,7 @@ html {
     align-items: center;
     display: flex;
     justify-content: center;
-    z-index: 777;
+    z-index: 500;
 }
 
 .step-line {
@@ -449,14 +460,14 @@ html {
     min-height: 100vh;
     height: auto;
     width: 100%;
-    background-color: #1d1f20;
+    background: linear-gradient(to bottom, #E30B5C, #1d1f20);
     color: whitesmoke;
 }
 
 .container2 h1 {
     font-size: 5rem;
     padding: 2rem;
-    color: #E30B5C;
+    color: whitesmoke;
     text-align: center;
 }
 
@@ -469,30 +480,33 @@ html {
 .container2 .row .card {
     background-color: #0b0c0c33;
     border: 1px solid #E30B5C;
+    margin: 1rem;
+    height: 35vh;
 }
 
 .container2 .row .card-body {
-    min-height: 30vh;
+    min-height: 10vh;
 }
 
 .container2 .row .card-title {
-    color: #E30B5C;
+    color: whitesmoke;
 }
 
 .skillcontainer {
     width: 100%;
     background-color: #676767;
-    margin: 1vw 0;
+    margin: 0;
 }
 
 .skills {
     height: 1vw;
     text-align: right;
     color: white;
+    margin-bottom: 1rem;
 }
 
 .html {
-    width: 92%;
+    width: 90%;
     background-color: #E30B5C;
 }
 
@@ -512,12 +526,12 @@ html {
 }
 
 .ai {
-    width: 70%;
+    width: 60%;
     background-color: #E30B5C;
 }
 
 .sql {
-    width: 90%;
+    width: 75%;
     background-color: #E30B5C;
 }
 
@@ -570,3 +584,145 @@ html {
     color: #E30B5C;
 }
 
+.container3 .card h3 {
+    text-align: center;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+}
+
+.certificate {
+    width: 100%;
+    height: auto;
+    transition: 0.5s ease-in-out;
+    border: 2px solid gray;
+}
+
+.certificate:hover {
+    transform: scale(1.5);
+}
+
+.sptext {
+    color: #E30B5C;
+    font-weight: bold;
+}
+
+.container3 .card-group .scarddd {
+    background-color: #1d1f20;
+    margin: auto;
+    margin: auto 2.5rem;
+    border: none;
+}
+
+.container3 .card-group .scarddd a {
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 200px;
+    font-weight: 450;
+    background-color: #E30B5C;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    transition: 0.2s linear;
+    width: 100%;
+}
+
+.container3 .card-group .scarddd a:hover {
+    background-color: whitesmoke;
+    color: #E30B5C;
+}
+
+.container3 .card-group .scarddd h3 {
+    border-bottom: none;
+}
+
+.container3 .card-group .card-body .txts {
+    color: whitesmoke;
+    padding: 10px;
+    background-color: #E30B5C;
+}
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: -1;
+    opacity: 1;
+}
+
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+}
+
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+
+.bgBottom {
+    z-index: 5;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+
+.waveTop {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveTop {
+    animation: move-wave 3s;
+    -webkit-animation: move-wave 3s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.waveMiddle {
+    background-size: 50% 120px;
+}
+
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+
+.waveBottom {
+    background-size: 50% 100px;
+}
+
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
