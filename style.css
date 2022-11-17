@@ -474,18 +474,24 @@ html {
 .container2 .row {
     width: 90%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 .container2 .row .card {
     background-color: #0b0c0c33;
     border: 1px solid #E30B5C;
     margin: 1rem;
-    height: 35vh;
+    min-height: 35vh;
+    height: auto;
 }
 
 .container2 .row .card-body {
     min-height: 10vh;
+}
+
+.container2 .row .card-body .card-text {
+    font-weight: bold;
+    color: #ff4a8c;
 }
 
 .container2 .row .card-title {
@@ -502,7 +508,6 @@ html {
     height: 1vw;
     text-align: right;
     color: white;
-    margin-bottom: 1rem;
 }
 
 .html {
@@ -612,6 +617,7 @@ html {
     background-color: #1d1f20;
     margin: auto;
     margin: auto 2.5rem;
+    padding: 2rem 0;
     border: none;
 }
 
