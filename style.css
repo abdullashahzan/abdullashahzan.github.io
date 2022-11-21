@@ -24,7 +24,7 @@ html {
     z-index: 10;
 }
 
-.mynavbar .logo {
+.mynavbar .logo , .mynavbar .logo a{
     letter-spacing: 2px;
     font-weight: lighter;
     color: rgb(185, 185, 185);
@@ -32,6 +32,7 @@ html {
     animation: fade-in 1s ease-in;
     animation: blinking 3s linear infinite;
     font-size: 4rem;
+    text-decoration: none;
 }
 
 @keyframes blinking {
@@ -45,14 +46,6 @@ html {
     50% {
         text-shadow: 1px 2px 10px #E30B5C, 1px 2px 10px #E30B5C;
     }
-}
-
-.mynavbar .logo:hover span {
-    display: none;
-}
-
-.mynavbar .logo:hover::before {
-    content: "Peek-a-boo!";
 }
 
 .contents {
