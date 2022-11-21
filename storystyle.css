@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fadein {
+    animation: fadein 2s ease-in;
+}
+
+.vh {
+    height: 100vh;
+    width: auto;
+}
+
+.firstbtn {
+    background: #012d36;
+    border: none;
+    color: white;
+    padding: 2rem;
+    margin: 0.5rem;
+    border: 2px solid white;
+    text-decoration: none;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+
+.firstbtn:hover {
+    background-color: white;
+    border: 2px solid#012d36;
+    color: #012d36;
+}
+
+.padd {
+    padding: 3rem;
+}
+
+.row-fluid {
+    background-position: center;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.float {
+    animation: floating 3s infinite ease-in-out;
+}
+
+.block1 .page1 {
+    background-image: url('ch1page1.jpg');
+    color: white;
+}
+
+.block1 .page2 {
+    background-image: url('ch1page2.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block1 .page3 {
+    background-image: url('https://www.fairfaxcounty.gov/news/sites/news/files/Assets/images/door-sales.jpg');
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.block1 .page4, .block1 .page6, .block1 .page7 {
+    background-color: black;
+    color: white;
+}
+
+.block1 .page5 {
+    background-image: url('https://images.pond5.com/scary-zombie-green-face-2d-footage-093981613_iconl.jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: black;
+    color: white;
+}
+
+@keyframes fadein {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+@keyframes floating {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(15px);}
+    100% {transform: translateY(0);}
+}
+
