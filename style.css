@@ -15,7 +15,6 @@ html {
     background-color: rgb(32, 31, 31);
     z-index: 100000;
     text-align: center;
-    overflow: hidden;
 }
 
 .loadingScreen h1 {

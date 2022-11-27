@@ -16,8 +16,7 @@
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 </head>
 
-<body>
-
+<body style="overflow-y: hidden;">
 
     <div class="mynavbar">
         <h1 class="logo"><a href="index1.html">Welcome...</a></h1>
@@ -645,7 +644,11 @@
     <script src="script.js"></script>
     <script>
         $(window).on("load", function () {
-            $(".loadingScreen").fadeOut("slow");
+            setTimeout(() => {
+                $(".loadingScreen").fadeOut("slow");
+                $("body").removeAttr("style");
+            }, 2000);
+        
         });
     </script>
 </body>
