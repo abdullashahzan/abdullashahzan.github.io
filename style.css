@@ -1,4 +1,3 @@
-
 html {
     scroll-behavior: smooth;
 }
@@ -35,7 +34,8 @@ html {
     z-index: 10;
 }
 
-.mynavbar .logo , .mynavbar .logo a{
+.mynavbar .logo,
+.mynavbar .logo a {
     letter-spacing: 2px;
     font-weight: lighter;
     color: rgb(185, 185, 185);
@@ -465,53 +465,41 @@ html {
     height: auto;
     width: 100%;
     background: linear-gradient(to bottom, #E30B5C, #1d1f20);
+    background-color: #1d1f20;
     color: whitesmoke;
+    background-image: url('https://w0.peakpx.com/wallpaper/1014/704/HD-wallpaper-flamingo-is-standing-with-background-of-purple-sky-during-sunset-birds.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
 }
 
-.container2 h1 {
-    font-size: 5rem;
+.container2 .centerthisthing article {
     padding: 2rem;
-    color: whitesmoke;
+}
+
+.container2 .centerthisthing article h1 {
+    font-size: 6rem;
+    width: fit-content;
+    text-align: center;
+}
+
+.container2 .centerthisthing article p {
+    width: fit-content;
     text-align: center;
 }
 
 .container2 .row {
-    width: 90%;
-    margin: 0 auto;
-    padding: 0 1rem;
-}
-
-.container2 .row .card {
-    background-color: #0b0c0c33;
-    border: 1px solid #E30B5C;
-    margin: 1rem;
-    min-height: 35vh;
-    height: auto;
-}
-
-.container2 .row .card-body {
-    min-height: 10vh;
-}
-
-.container2 .row .card-body .card-text {
-    font-weight: bold;
-    color: #ff4a8c;
-}
-
-.container2 .row .card-title {
-    color: whitesmoke;
+    padding: 2rem;
 }
 
 .skillcontainer {
     width: 100%;
     background-color: #676767;
-    margin: 0;
 }
 
 .skills {
     height: 1vw;
     text-align: right;
-    color: white;
 }
 
 .html {
@@ -543,6 +531,12 @@ html {
     width: 75%;
     background-color: #E30B5C;
 }
+
+.cpp {
+    width: 75%;
+    background-color: #E30B5C;
+}
+
 
 /* width */
 ::-webkit-scrollbar {
@@ -577,9 +571,21 @@ html {
 
 .container3 h1 {
     color: #E30B5C;
-    padding: 3rem;
     text-align: center;
-    font-size: 5rem;
+    font-size: 6rem;
+    word-wrap: break-word;
+}
+
+.container3 article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container3 article p {
+    color: rgba(245, 245, 245, 0.6);
+    text-align: center;
+    padding-top: 1rem;
 }
 
 .container3 .card {
@@ -619,7 +625,6 @@ html {
 
 .container3 .card-group .scarddd {
     background-color: #1d1f20;
-    margin: auto;
     margin: auto 2.5rem;
     padding: 2rem 0;
     border: none;
@@ -859,7 +864,11 @@ html {
 }
 
 @keyframes fadein {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
+    0% {
+        opacity: 0;
+    }
 
+    100% {
+        opacity: 1;
+    }
+}
