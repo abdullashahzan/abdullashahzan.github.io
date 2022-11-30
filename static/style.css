@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.icon {
+    color: inherit;
+}
+
 .loadingScreen {
     width: 100%;
     height: 100%;
