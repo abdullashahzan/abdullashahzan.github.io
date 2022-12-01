@@ -173,6 +173,7 @@ html {
     bottom: 33%;
     z-index: 100;
     font-weight: lighter;
+    text-align: center;
 }
 
 .cv a {
