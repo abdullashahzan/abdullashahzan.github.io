@@ -230,7 +230,7 @@
 }
 
 .content1 {
-    width: 75%;
+    width: 100%;
     height: auto;
 }
 
@@ -247,13 +247,13 @@
 }
 
 .page2 {
-    height: 100vh;
+    height: 70vh;
     width: 100%;
 }
 
 .content2 {
     background-image: url("../gallery/secondpageImage2.jpg");
-    height: 100vh;
+    height: 70vh;
     width: 100%;
     background-size: cover;
     background-position: center;
@@ -270,7 +270,9 @@
 .displaycontainer {
     color: whitesmoke;
     display: flex;
-    margin-bottom: 20%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .text {
@@ -283,15 +285,6 @@
     font-size: 5rem;
     color: var(--white);
     font-weight: 100;
-}
-
-.text2 {
-    color: white;
-    position: absolute;
-    margin-top: 25%;
-    text-align: center;
-    font-weight: 100;
-    font-size: 1.2rem;
 }
 
 .reveal {
@@ -311,11 +304,25 @@
 
 .animatedsvg {
 	width: 100%;
-	height: 100vh;
+	height: 70vh;
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0.2;
+}
+
+.joinclub {
+    text-decoration: none;
+    background-color: var(--primarygreen);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 5px;
+    font-weight: 100;
+    width: fit-content;
+}
+
+.joinclub:hover {
+    color: var(--white);
 }
 
 @keyframes floating {
@@ -325,6 +332,14 @@
 }
 
 @media screen and (max-width: 600px) {
+    .content1, .page1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+    }
+
     .content1 h1 {
         font-size: 3rem;
     }
@@ -347,7 +362,44 @@
         bottom: 3rem;
     }
 
-    .displaycontainer {
-        margin-bottom: 50%;
+    .joinclub {
+        margin: 0 auto;
+    }
+
+    .logoimg {
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 800px) {
+    .content1 h1 {
+        font-size: 9rem;
+    }
+
+    .content1 p {
+        font-size: 2rem;
+    }
+
+    .joinclub {
+        font-size: 2rem;
+    }
+
+    .logoimg {
+        height: 15rem;
+    }
+
+    .icon svg {
+        width: 6rem;
+        height: 6rem;
+        margin-top: 30px;
+    }
+
+    .topnav {
+        font-size: 3rem;
+    }
+
+    .iconsvg svg {
+        width: 3rem;
+        height: 3rem;
     }
 }
