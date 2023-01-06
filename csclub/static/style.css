@@ -156,7 +156,6 @@
     padding-top: 2rem;
     margin: 0;
     transition: 0.1s linear;
-    position: absolute;
 }
 
 /* Style the links inside the navigation bar */
@@ -194,7 +193,7 @@
     .topnav a.icon {
         display: block;
         float: right;
-        margin-top: 1rem;
+        margin-top: 0.9rem;
     }
 
 }
@@ -222,11 +221,11 @@
 }
 
 .page1 {
-    height: 100vh;
+    height: 76vh;
     width: 100%;
     display: flex;
     align-items: flex-end;
-    padding: 4rem;
+    padding: 2rem 4rem;
 }
 
 .content1 {
@@ -252,7 +251,7 @@
 }
 
 .content2 {
-    background-image: url("../gallery/secondpageImage2.jpg");
+    background-image: url("../gallery/secondpageImage4.jpg");
     height: 70vh;
     width: 100%;
     background-size: cover;
@@ -260,7 +259,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     filter: blur(0px);
-    background-color: rgb(24, 22, 22);
+    background-color: rgb(44, 41, 41);
     background-blend-mode: multiply;
     display: flex;
     justify-content: center;
@@ -331,13 +330,62 @@
     100% {transform: translateY(0px);}
 }
 
+.page3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.page3 .maindiv {
+    padding: 3rem;
+}
+
+.page3 .maindiv h1 {
+    font-weight: 100;
+    color: var(--primarygreen);
+    font-size: 3rem;
+    word-wrap: break-word;
+    margin-bottom: 2rem;
+}
+
+.page3 .maindiv h1 span {
+    font-weight: 400;
+}
+
+.page3 .maindiv .card {
+    border: 1px solid var(--primarygreen);
+    text-align: center;
+    color: var(--primarygreen);
+    min-height: 40vh;
+    margin: 2rem 0;
+}
+
+.page3 .maindiv .card .btn {
+    background-color: var(--primarygreen);
+    color: white;
+    border: 1px solid var(--white);
+    font-weight: 100;
+}
+
+.page3 .maindiv .card .btn:hover {
+    background-color: var(--white);
+    color: var(--primarygreen);
+    border: 1px solid var(--primarygreen);
+}
+
+.page4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 1rem;
+}
+
 @media screen and (max-width: 600px) {
     .content1, .page1 {
         display: flex;
         justify-content: center;
         align-items: center;
         text-align: center;
-        margin-top: 3rem;
     }
 
     .content1 h1 {
@@ -356,12 +404,6 @@
         font-size: 3rem;
     }
 
-    .text2 {
-        font-size: 1rem;
-        position: absolute;
-        bottom: 3rem;
-    }
-
     .joinclub {
         margin: 0 auto;
     }
@@ -371,9 +413,9 @@
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 800px) {
+@media screen and (max-width: 1000px) and (min-width: 760px) {
     .content1 h1 {
-        font-size: 9rem;
+        font-size: 8rem;
     }
 
     .content1 p {
@@ -385,13 +427,12 @@
     }
 
     .logoimg {
-        height: 15rem;
+        height: 10rem;
     }
 
     .icon svg {
-        width: 6rem;
-        height: 6rem;
-        margin-top: 30px;
+        width: 4rem;
+        height: 4rem;
     }
 
     .topnav {
