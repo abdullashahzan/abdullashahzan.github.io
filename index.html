@@ -27,7 +27,8 @@
                 <li><a class="hover-underline-animation"
                         onclick="document.querySelector('.container2').scrollIntoView()" type="button">About</a></li>
                 <li><a class="hover-underline-animation"
-                        onclick="document.querySelector('.container3neo').scrollIntoView()" type="button">Projects</a></li>
+                        onclick="document.querySelector('.container3neo').scrollIntoView()" type="button">Projects</a>
+                </li>
                 <li><a class="hover-underline-animation"
                         onclick="document.querySelector('.container4').scrollIntoView()" type="button">Achievements</a>
                 </li>
@@ -55,24 +56,29 @@
     </div>
 
     <div class="container3neo">
+        <!--
         <article>
             <div class="headingdiv">
                 <h1 class="reveal">My Projects</h1>
                 <p class="reveal">A collection of all my projects</p>
                 <hr class="reveal" style="color: white; width: 60%; margin:auto;">
             </div>
-        </article>
+        </article>-->
 
         <div class="container-fluid projectrow reveal">
             <div class="row">
-                <div class="col-lg-1 d-none d-lg-block"><button class="arrows arrow-left"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
-                            class="bi bi-caret-left-fill" viewBox="0 0 16 16">
-                            <path
-                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
-                        </svg></button></div>
-                <div class="col-lg-10 col-md-12">
+                <div class="col-lg-12 col-md-12">
                     <div class="slidingprojects">
+                        <div class="specialcard">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h1 class="card-title">My projects</h1>
+                                    <p class="card-text">The following are my projects and their source codes. Please
+                                        feel free to check them out.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
                         <div class="projects">
                             <div class="card">
                                 <img class="card-img-top" src="gallery/p1.jpg" alt="Card image cap">
@@ -106,13 +112,12 @@
                         </div>
                         <div class="projects">
                             <div class="card">
-                                <img class="card-img-top"
-                                    src="./gallery/uclubwebsite.jpeg"
-                                    alt="Card image cap">
+                                <img class="card-img-top" src="./gallery/uclubwebsite.jpeg" alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">University Club Website</h5>
                                     <hr>
-                                    <p class="card-text"><span class="sptext">Languages used:</span> Html CSS Javascript <br>
+                                    <p class="card-text"><span class="sptext">Languages used:</span> Html CSS Javascript
+                                        <br>
                                         <span class="sptext">Framework used: </span>None
                                     </p>
                                     <a href="https://abdullashahzan.github.io/csclub/index.html"
@@ -218,26 +223,33 @@
                         </div>
                         <div class="projects">
                             <div class="card">
-                                <img class="card-img-top" src="https://logodownload.org/wp-content/uploads/2019/08/github-logo.png"
+                                <img class="card-img-top"
+                                    src="https://logodownload.org/wp-content/uploads/2019/08/github-logo.png"
                                     alt="Card image cap">
                                 <div class="card-body">
                                     <h5 class="card-title">Github</h5>
                                     <hr>
                                     <p class="card-text">Check out more projects on my github page...
                                     </p>
-                                    <a href="https://github.com/abdullashahzan"
-                                        class="btn btn-primary">My Github Page</a>
+                                    <a href="https://github.com/abdullashahzan" class="btn btn-primary">My Github
+                                        Page</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-1 d-none d-lg-block"><button class="arrows arrow-right"><svg
-                            xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor"
-                            class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                <div class="d-none d-lg-block">
+                    <button class="arrows arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                            fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
                             <path
                                 d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
-                        </svg></button></div>
+                        </svg></button>
+                    <button class="arrows arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                            fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                            <path
+                                d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                        </svg></button>
+                </div>
             </div>
         </div>
     </div>
