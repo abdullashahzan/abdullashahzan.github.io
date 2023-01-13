@@ -1,0 +1,386 @@
+:root {
+    --primary: #1c1c1e;
+    --secondary: #FFE55C;
+}
+
+.loadingScreen {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: var(--primary);
+    color: var(--secondary);
+    padding: 4rem;
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.loadingScreen h1 {
+    font-weight: 100;
+    font-size: 5rem;
+    letter-spacing: 0.2rem;
+}
+
+.loadingScreen p {
+    font-weight: 100;
+    letter-spacing: 0.2rem;
+}
+
+.mainbody {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--primary);
+    position: relative;
+}
+
+.topnav {
+    background: transparent;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 3vh 0;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a:first-child {
+    display: block;
+    text-align: center;
+    padding: 2vh 4vh;
+    margin: 0 2px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+}
+
+/* Change the color of links on hover */
+.topnav a:not(:last-child):hover {
+    background: white;
+    color: black;
+}
+
+.topnav .connect {
+    text-align: center;
+    padding: 2vh 4vh;
+    margin: 0 2px;
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.2s ease-in-out;
+    position: absolute;
+    right: 10vh;
+    color: var(--primary);
+    background-color: var(--secondary);
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+    color: var(--secondary);
+    display: none;
+}
+
+.logoimg {
+    height: 15vh;
+    width: auto;
+}
+
+.topnav a:first-child:hover {
+    background: none;
+}
+
+.intro {
+    height: 80vh;
+    width: 100%;
+    font-weight: 100;
+    position: relative;
+}
+
+.artcle {
+    position: absolute;
+    padding: 0 5vh;
+    bottom:15vh;
+}
+
+.intro h1 {
+    font-weight: 100;
+    font-size: 5rem;
+    color: var(--secondary);
+}
+
+.intro p {
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding: 1vh;
+}
+
+.artcle .btn {
+    background: var(--secondary);
+    width: fit-content;
+    margin: 0 auto;
+    color: var(--primary);
+    font-weight: 100;
+    padding: 2vh;
+}
+
+.artcle a{
+    text-decoration: none;
+    color: var(--primary);
+}
+
+.aboutbody {
+    height: 75vh;
+    width: 100%;
+    position: relative;
+    background-image: url("../gallery/pexels-navneet-shanu-672630.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--primary);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.aboutbody .secondary {
+    position: absolute;
+    height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animatedsvg {
+	width: 100%;
+	height: 75vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.1;
+}
+
+.displaycontainer {
+    color: var(--secondary);
+    display: flex;
+}
+
+.text {
+    font-size: 5rem;
+    color: var(--secondary);
+    font-weight: 100;
+}
+
+.typed-cursor {
+    font-size: 5rem;
+    color: var(--white);
+    font-weight: 100;
+}
+
+footer {
+    background: var(--primary);
+    color: whitesmoke;
+    font-weight: 100;
+}
+
+footer h6 {
+    color: var(--secondary);
+}
+
+.mainbody2 {
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--primary);
+}
+
+.theform {
+    background-color: rgba(128, 128, 128, 0.336);
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 280px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 4vh;
+        padding: 3vh 2vh;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .logoimg {
+        height: 10vh;
+    }
+
+    .artcle {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 0 1vh;
+    }
+
+    .intro {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2rem;
+    }
+
+    .intro p {
+        font-size: 1rem;
+        padding: 0;
+    }
+
+    .text {
+        font-size: 2rem;
+    }
+
+    .typed-cursor {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) and (min-width: 300px){
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 4vh;
+        padding: 3vh 2vh;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .logoimg {
+        height: 10vh;
+    }
+
+    .artcle {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 0 1vh;
+    }
+
+    .intro {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 2.5rem;
+    }
+
+    .intro p {
+        font-size: 1.3rem;
+        padding: 0;
+    }
+
+    .artcle .btn {
+        margin-top: 5vh;
+        font-size: 2vh;
+    }
+
+    .text {
+        font-size: 3rem;
+    }
+
+    .typed-cursor {
+        font-size: 3rem;
+    }
+
+}
+
+
+@media screen and (max-width: 1000px) and (min-width: 500px){
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+        font-size: 4vh;
+        padding: 3vh 2vh;
+    }
+
+    .topnav {
+        display: block;
+    }
+
+    .logoimg {
+        height: 10vh;
+    }
+
+    .artcle {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        padding: 0 1vh;
+    }
+
+    .intro {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .intro h1 {
+        font-size: 4rem;
+    }
+
+    .intro p {
+        font-size: 2rem;
+        padding: 0;
+    }
+
+    .artcle .btn {
+        margin-top: 5vh;
+        font-size: 2rem;
+    }
+
+    .topnav.responsive a{
+        font-size: 2rem;
+    }
+
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 820px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0;
+        top: 3vh;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
