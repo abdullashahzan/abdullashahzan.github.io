@@ -100,7 +100,7 @@
 .artcle {
     position: absolute;
     padding: 0 5vh;
-    bottom:15vh;
+    bottom: 15vh;
 }
 
 .intro h1 {
@@ -115,6 +115,80 @@
     padding: 1vh;
 }
 
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 2s all ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* title styles */
+.home-title {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    line-height: 1.2;
+}
+
+.home-title::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary);
+    animation: a-ltr-after 2s cubic-bezier(.77, 0, .18, 1) forwards;
+    transform: translateX(-101%);
+}
+
+.home-title::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    animation: a-ltr-before 2s cubic-bezier(.77, 0, .18, 1) forwards;
+    transform: translateX(0);
+}
+
+.home-title:nth-of-type(1)::before,
+.home-title:nth-of-type(1)::after {
+    animation-delay: 1s;
+}
+
+.home-title:nth-of-type(2)::before,
+.home-title:nth-of-type(2)::after {
+    animation-delay: 1.5s;
+}
+
+@keyframes a-ltr-after {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(101%)
+    }
+}
+
+@keyframes a-ltr-before {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(200%)
+    }
+}
+
 .artcle .btn {
     background: var(--secondary);
     width: fit-content;
@@ -124,7 +198,12 @@
     padding: 2vh;
 }
 
-.artcle a{
+.artcle .btn:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+
+.artcle a {
     text-decoration: none;
     color: var(--primary);
 }
@@ -152,8 +231,8 @@
 }
 
 .animatedsvg {
-	width: 100%;
-	height: 75vh;
+    width: 100%;
+    height: 75vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -175,6 +254,161 @@
     font-size: 5rem;
     color: var(--white);
     font-weight: 100;
+}
+
+.details {
+    background-color: var(--primary);
+}
+
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--secondary);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+}
+
+/* Container around content */
+.timelinecontainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+}
+
+/* The circles on the timeline */
+.timelinecontainer::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -17px;
+    background-color: var(--secondary);
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+    left: 0;
+}
+
+/* Place the container to the right */
+.right {
+    left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid var(--secondary);
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent var(--secondary);
+}
+
+.left::after {
+    right: -12px;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid var(--secondary);
+    border-width: 10px 10px 10px 0;
+    border-color: transparent var(--secondary) transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+    left: -13px;
+}
+
+.details h1 {
+    color: var(--secondary);
+    text-align: center;
+    padding: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+/* The actual content */
+.content {
+    padding: 20px 30px;
+    background: transparent;
+    border: 3px solid var(--secondary);
+    position: relative;
+    border-radius: 6px;
+}
+
+.content h2 {
+    font-weight: 100;
+    color: white;
+}
+
+.content h2 span {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--secondary);
+}
+
+.projects {
+    background-color: var(--primary);
+    padding: 3rem;
+    position: relative;
+}
+
+.projects h1 {
+    color: var(--secondary);
+    text-align: center;
+    padding: 3rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.gallery {
+    line-height: 0;
+    -webkit-column-count: 3;
+    /* split it into 5 columns */
+    -webkit-column-gap: 5px;
+    /* give it a 5px gap between columns */
+    -moz-column-count: 3;
+    -moz-column-gap: 5px;
+    column-count: 3;
+    column-gap: 5px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    /* to match column gap */
+    background-color: var(--secondary);
+    border: 2px solid var(--secondary);
+    border-radius: 10px;
+    padding: 2px;
 }
 
 footer {
@@ -251,9 +485,65 @@ footer h6 {
     .typed-cursor {
         font-size: 2rem;
     }
+
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timelinecontainer {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timelinecontainer::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    .content h2 span {
+        font-size: 1.4rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .projects {
+        padding: 1rem;
+    }
+
+    .gallery {
+        line-height: 0;
+        -webkit-column-count: 2;
+        /* split it into 5 columns */
+        -webkit-column-gap: 5px;
+        /* give it a 5px gap between columns */
+        -moz-column-count: 2;
+        -moz-column-gap: 5px;
+        column-count: 2;
+        column-gap: 5px;
+    }
+
 }
 
-@media screen and (max-width: 500px) and (min-width: 300px){
+@media screen and (max-width: 500px) and (min-width: 300px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -309,10 +599,64 @@ footer h6 {
         font-size: 3rem;
     }
 
+    /* Place the timelime to the left */
+    .timeline::after {
+        left: 31px;
+    }
+
+    /* Full-width containers */
+    .timelinecontainer {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    /* Make sure that all arrows are pointing leftwards */
+    .timelinecontainer::before {
+        left: 60px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent white transparent transparent;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .left::after,
+    .right::after {
+        left: 18px;
+    }
+
+    /* Make all right containers behave like the left ones */
+    .right {
+        left: 0%;
+    }
+
+    .content h2 span {
+        font-size: 2.3rem;
+    }
+
+    .content h2 {
+        font-size: 2.2rem;
+    }
+
+    .projects {
+        padding: 1rem;
+    }
+
+    .gallery {
+        line-height: 0;
+        -webkit-column-count: 1;
+        /* split it into 5 columns */
+        -webkit-column-gap: 5px;
+        /* give it a 5px gap between columns */
+        -moz-column-count: 1;
+        -moz-column-gap: 5px;
+        column-count: 1;
+        column-gap: 5px;
+    }
+
 }
 
-
-@media screen and (max-width: 1000px) and (min-width: 500px){
+@media screen and (max-width: 1000px) and (min-width: 500px) {
     .topnav a:not(:first-child) {
         display: none;
     }
@@ -360,8 +704,20 @@ footer h6 {
         font-size: 2rem;
     }
 
-    .topnav.responsive a{
+    .topnav.responsive a {
         font-size: 2rem;
+    }
+
+    .gallery {
+        line-height: 0;
+        -webkit-column-count: 2;
+        /* split it into 5 columns */
+        -webkit-column-gap: 5px;
+        /* give it a 5px gap between columns */
+        -moz-column-count: 2;
+        -moz-column-gap: 5px;
+        column-count: 2;
+        column-gap: 5px;
     }
 
 }
