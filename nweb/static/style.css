@@ -31,10 +31,25 @@
 }
 
 .mainbody {
-    min-height: 100vh;
+    height: 100vh;
     width: 100%;
-    background-color: var(--primary);
+    background-image: url("../gallery/pexels-maria-orlova-4916015.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     position: relative;
+    background-color: #1c1c1e8c;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+
+.overlaything {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 20%, #1c1c1e);
+    height: 100vh;
+    width: 100%;
 }
 
 .topnav {
@@ -215,7 +230,7 @@
     background-image: url("../gallery/pexels-navneet-shanu-672630.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: var(--primary);
+    background-color: #1c1c1ef1;
     background-blend-mode: multiply;
     background-attachment: fixed;
     background-position: center;
@@ -258,6 +273,7 @@
 
 .details {
     background-color: var(--primary);
+    padding-bottom: 7rem;
 }
 
 .timeline {
@@ -437,7 +453,7 @@
     background-color: var(--primary);
     background-blend-mode: multiply;
     height: auto;
-    background-attachment:fixed;
+    background-attachment: fixed;
 }
 
 .bgimg p {
@@ -454,7 +470,7 @@
     border-radius: 0;
 }
 
-.ourcompany .bgimg .btn a{
+.ourcompany .bgimg .btn a {
     color: var(--primary);
     text-decoration: none;
 }
@@ -590,9 +606,22 @@
     border-radius: 0;
 }
 
-.ourcompanymobile .btn a{
+.ourcompanymobile .btn a {
     color: var(--primary);
     text-decoration: none;
+}
+
+.testimonials {
+    padding: 5rem;
+    background-color: var(--primary);
+}
+
+.testimonials h1 {
+    color: var(--secondary);
+    font-weight: 600;
+    padding-bottom: 4rem;
+    font-size: 3rem;
+    text-align: center;
 }
 
 footer {
