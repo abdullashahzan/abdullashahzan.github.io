@@ -189,7 +189,7 @@
     }
 }
 
-.artcle .btn {
+.artcle .btn a {
     background: var(--secondary);
     width: fit-content;
     margin: 0 auto;
@@ -380,12 +380,22 @@
     position: relative;
 }
 
+.pheader {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
 .projects h1 {
     color: var(--secondary);
     text-align: center;
-    padding: 3rem;
     font-size: 3rem;
     font-weight: 500;
+}
+
+.pheader p {
+    color: gray;
 }
 
 .gallery {
@@ -409,6 +419,180 @@
     border: 2px solid var(--secondary);
     border-radius: 10px;
     padding: 2px;
+}
+
+.ourcompany h1 {
+    color: var(--secondary);
+    font-size: 4rem;
+    padding: 3rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bgimg {
+    background-image: url("../gallery/img10.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--primary);
+    background-blend-mode: multiply;
+    height: auto;
+    background-attachment:fixed;
+}
+
+.bgimg p {
+    color: white;
+    font-weight: 100;
+    font-size: 1.1rem;
+    padding: 0 2rem;
+}
+
+.ourcompany .bgimg .btn {
+    background-color: var(--secondary);
+    padding: 1rem;
+    margin: 0 2rem;
+    border-radius: 0;
+}
+
+.ourcompany .bgimg .btn a{
+    color: var(--primary);
+    text-decoration: none;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+/* Make the images invisible by default */
+.Containers {
+    display: none;
+}
+
+.Containers img {
+    height: auto;
+    width: 500px;
+}
+
+/* forward & Back buttons */
+.Back,
+.forward {
+    cursor: pointer;
+    position: absolute;
+    top: 48%;
+    width: auto;
+    margin-top: -23px;
+    padding: 17px;
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-weight: bold;
+    font-size: 19px;
+    transition: 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    text-decoration: none;
+}
+
+/* Place the "forward button" to the right */
+.forward {
+    right: 0;
+    border-radius: 4px 0 0 4px;
+}
+
+/*when the user hovers,add a black background with some little opacity */
+.Back:hover,
+.forward:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--secondary);
+}
+
+/* Caption Info */
+.Info {
+    color: var(--secondary);
+    background-color: var(--primary);
+    font-size: 16px;
+    padding: 10px 14px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    text-align: center;
+}
+
+/* Worknumbering (1/3 etc) */
+.MessageInfo {
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+    padding: 10px 14px;
+    position: absolute;
+    top: 0;
+}
+
+/* Faint animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 6s;
+    animation-name: fade;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    90% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0
+    }
+
+    90% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.ourcompanymobile {
+    height: auto;
+}
+
+.ourcompanymobile h1 {
+    color: var(--secondary);
+    font-size: 4rem;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.ourcompanymobile .btn {
+    background-color: var(--secondary);
+    position: relative;
+    left: 2rem;
+    bottom: 20px;
+    padding: 0.7rem;
+    border-radius: 0;
+}
+
+.ourcompanymobile .btn a{
+    color: var(--primary);
+    text-decoration: none;
 }
 
 footer {
@@ -540,7 +724,6 @@ footer h6 {
         column-count: 2;
         column-gap: 5px;
     }
-
 }
 
 @media screen and (max-width: 500px) and (min-width: 300px) {
@@ -718,6 +901,22 @@ footer h6 {
         -moz-column-gap: 5px;
         column-count: 2;
         column-gap: 5px;
+    }
+
+    .bgimg {
+        position: relative;
+    }
+
+    .bgimg p {
+        font-size: 1.5rem;
+    }
+
+    .slideshow-container {
+        position: absolute;
+        bottom: 1rem;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 
 }
