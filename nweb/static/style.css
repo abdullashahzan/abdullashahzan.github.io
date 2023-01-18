@@ -33,7 +33,7 @@
 .mainbody {
     height: 100vh;
     width: 100%;
-    background-image: url("../gallery/pexels-maria-orlova-4916015.jpg");
+    background-image: url("../gallery/pexels-mario-cuadros-3694057.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -227,7 +227,7 @@
     height: 75vh;
     width: 100%;
     position: relative;
-    background-image: url("../gallery/pexels-navneet-shanu-672630.jpg");
+    background-image: url("../gallery/pexels-maria-orlova-4916015.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-color: #1c1c1ef1;
@@ -612,16 +612,89 @@
 }
 
 .testimonials {
-    padding: 5rem;
+    padding: 1rem;
     background-color: var(--primary);
 }
 
 .testimonials h1 {
     color: var(--secondary);
     font-weight: 600;
-    padding-bottom: 4rem;
-    font-size: 3rem;
+    padding: 4rem 0;
+    font-size: 2.8rem;
     text-align: center;
+}
+
+.container3neo {
+    height: auto;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.slidingprojects {
+    display: flex;
+    height: auto;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.slidingprojects::-webkit-scrollbar {
+    display: none;
+}
+
+.slidingprojects .projects .card {
+    font-weight: 100;
+    background: #1d1f20;
+    border: 2px solid var(--secondary);
+    color: whitesmoke;
+    height: 40vh;
+    min-height: 40vh;
+    width: auto;
+    max-width: 30rem;
+}
+
+.slidingprojects .projects {
+    flex: 0 0 auto;
+}
+
+.slidingprojects .card-title {
+    color: var(--secondary);
+}
+
+.slidingprojects .card-body a {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.ratings span {
+    font-size: 5rem;
+    padding: 0 1rem;
+    color: white;
+}
+
+.ratings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+}
+
+.arrows {
+    background: none;
+    border: none;
+    padding: 2rem 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.2s linear;
+    position: relative;
+    float: right;
+}
+
+.arrows:hover {
+    color: var(--secondary);
 }
 
 footer {
@@ -967,4 +1040,24 @@ footer h6 {
         display: block;
         text-align: left;
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--secondary);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1c1c1ef1;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #1c1c1ee3;
 }

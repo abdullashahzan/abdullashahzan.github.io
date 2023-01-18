@@ -200,9 +200,107 @@
     </div>
     <!--<div class="testimonials">
         <h1>Testimonials</h1>
+<<<<<<< Updated upstream
         <script src="https://apps.elfsight.com/p/platform.js" defer></script>
         <div class="elfsight-app-e93d6c42-1f12-4a3c-8e50-f689c6ae48d7"></div>
     </div>-->
+=======
+        <div class="container3neo">
+            <div class="projectrow reveal">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="slidingprojects">
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Satyendra Tiwari</h5>
+                                        <hr>
+                                        <p class="card-text">A Very Good Place To Prepare Your Home Design With The Experienced Architecture Mr. Faizan With Beautiful Designs...Interior Or Exterior ...Which You Required...
+                                        </p>
+                                        <a href="https://g.co/kgs/4zyEX9"
+                                            class="btn btn-warning">Rating: 5/5</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">khadija Khatoon</h5>
+                                        <hr>
+                                        <p class="card-text">Positive: Value
+                                            Nice job . Interior work is just mindbowing
+                                        </p>
+                                        <a href="https://g.co/kgs/jKdxCy"
+                                            class="btn btn-warning">Rating: 5/5</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">rais ahmed</h5>
+                                        <hr>
+                                        <p class="card-text">Excellent work and supervision
+                                        </p>
+                                        <a href="https://g.co/kgs/4jqrPa"
+                                            class="btn btn-warning">Rating: 5/5</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">afjal khan</h5>
+                                        <hr>
+                                        <p class="card-text">Excellent  and highly creative outstanding,  work ,,,👌
+                                        </p>
+                                        <a href="https://g.co/kgs/NWBJod"
+                                            class="btn btn-warning">Rating: 5/5</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">summit kashyap</h5>
+                                        <hr>
+                                        <p class="card-text">Excellent interior work and well finishing design by Nexxus Architects
+                                        </p>
+                                        <a href="https://g.co/kgs/4zyEX9"
+                                            class="btn btn-warning">Rating: 5/5</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="projects">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Check out more reviews on Google</h5>
+                                        <hr>
+                                        <p class="ratings"><span>4.8</span> ratings with 50+ reviews</p>
+                                        <a href="https://www.google.com/maps/place/Nexxus+Architects+%26+design+studio/@27.3872506,80.1246701,17z/data=!3m1!4b1!4m7!3m6!1s0x399ef93121937e43:0xe919f507cef1afb1!8m2!3d27.3872459!4d80.1268588!9m1!1b1"
+                                            class="btn btn-warning">Show</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-none d-lg-block">
+                        <button class="arrows arrow-right"><svg xmlns="http://www.w3.org/2000/svg" width="64"
+                                height="64" fill="currentColor" class="bi bi-caret-right-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m12.14 8.753-5.482 4.796c-.646.566-1.658.106-1.658-.753V3.204a1 1 0 0 1 1.659-.753l5.48 4.796a1 1 0 0 1 0 1.506z" />
+                            </svg></button>
+                        <button class="arrows arrow-left"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64"
+                                fill="currentColor" class="bi bi-caret-left-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="m3.86 8.753 5.482 4.796c.646.566 1.658.106 1.658-.753V3.204a1 1 0 0 0-1.659-.753l-5.48 4.796a1 1 0 0 0 0 1.506z" />
+                            </svg></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+>>>>>>> Stashed changes
 
 
     <!-- Footer -->
@@ -331,7 +429,15 @@
                 $("body").removeAttr("style");
                 $(".thistext").addClass(" home-title")
             }, 1);
+        });
+        $(".arrow-left").click(function () {
+            var leftPos = $('.slidingprojects').scrollLeft();
+            $(".slidingprojects").animate({ scrollLeft: leftPos - 500 }, 200);
+        });
 
+        $(".arrow-right").click(function () {
+            var leftPos = $('.slidingprojects').scrollLeft();
+            $(".slidingprojects").animate({ scrollLeft: leftPos + 500 }, 200);
         });
     </script>
     <!-- Loading Screen -->
