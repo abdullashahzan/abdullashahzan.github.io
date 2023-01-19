@@ -52,6 +52,37 @@
     width: 100%;
 }
 
+.greviewtab {
+    background-color: var(--primary);
+    height: auto;
+    width: auto;
+}
+
+.textdiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+.reviews h1{
+    color: var(--secondary);
+    font-weight: 100;
+    font-size: 3rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.reviews p {
+    color: white;
+    text-align: center;
+    font-weight: 100;
+}
+
+.reviews p span {
+    border-bottom: 1px solid var(--secondary);
+}
+
 .topnav {
     background: transparent;
     overflow: hidden;
@@ -492,43 +523,13 @@
     width: 500px;
 }
 
-/* forward & Back buttons */
-.Back,
-.forward {
-    cursor: pointer;
-    position: absolute;
-    top: 48%;
-    width: auto;
-    margin-top: -23px;
-    padding: 17px;
-    color: var(--secondary);
-    background-color: var(--primary);
-    font-weight: bold;
-    font-size: 19px;
-    transition: 0.4s ease;
-    border-radius: 0 5px 5px 0;
-    user-select: none;
-    text-decoration: none;
-}
-
-/* Place the "forward button" to the right */
-.forward {
-    right: 0;
-    border-radius: 4px 0 0 4px;
-}
-
-/*when the user hovers,add a black background with some little opacity */
-.Back:hover,
-.forward:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-    color: var(--secondary);
-}
-
 /* Caption Info */
 .Info {
     color: var(--secondary);
-    background-color: var(--primary);
+    background-color: #1c1c1ed0;
+    border-radius: 4rem;
     font-size: 16px;
+    font-weight: 100;
     padding: 10px 14px;
     position: absolute;
     bottom: 10px;
@@ -1049,15 +1050,15 @@ footer h6 {
 
 /* Track */
 ::-webkit-scrollbar-track {
-    background: var(--secondary);
+    background: #0b0b0c;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #1c1c1ef1;
+    background: var(--secondary);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: #1c1c1ee3;
+    background: #ffe45cbe;
 }
