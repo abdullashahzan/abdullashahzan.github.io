@@ -40,15 +40,15 @@ html {
 
 .mynavbar .logo,
 .mynavbar .logo a {
-    padding: 0.7vw 1vw;
-    font-size: 4rem;
+    padding: 0.5vw 0.8vw;
+    font-size: 3rem;
 }
 
 .logoimg {
     position: absolute;
     width: auto;
-    height: 90%;
-    padding: 10px;
+    height: 100%;
+    padding: 10px 0;
     transition: 0.2s ease-in-out;
 }
 
@@ -179,12 +179,11 @@ html {
 
 .cv a {
     color: whitesmoke;
-    padding: 0.5rem 0.8rem;
-    border: 2px solid #E30B5C;
+    padding: 1rem;
+    width: 4rem;
+    background-color: #E30B5C;
     text-decoration: none;
-    border-radius: 200px;
-    letter-spacing: 1px;
-    transition: 0.2s linear;
+    letter-spacing: 2px;
     font-size: 12px;
 }
 
@@ -318,9 +317,8 @@ html {
     background: var(--primary-gradient);
 }
 
-.container4 h1 {
-    padding: 2rem;
-    text-align: center;
+.container4 img:hover {
+    filter: grayscale(0);
 }
 
 :root {
@@ -940,6 +938,13 @@ html {
     padding: 10vh 0;
 }
 
+.aheading {
+    color: #E30B5C;
+    text-align: center;
+    padding: 4rem 0;
+    font-size: 3rem;
+}
+
 .slidingprojects {
     display: flex;
     height: auto;
@@ -1003,7 +1008,20 @@ html {
     height: 70vh;
     width: 62vh;
     background: none;
+    position: relative;
 }
+
+.slidingprojects .specialcard .card .card-body {
+    display: flex;
+    align-items: center;
+}
+
+.specialcard .card .card-body .card-title {
+    color: #E30B5C;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
 
 .arrows {
     background: none;
@@ -1033,7 +1051,11 @@ html {
     }
 
     .logoimg {
-        height: 13vh;
+        height: 10vh;
+    }
+
+    .logo {
+        margin: 2rem;
     }
 
     .slidingprojects .projects .card {
