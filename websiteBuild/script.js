@@ -1,1 +1,0 @@
-document.cookie = "flavor=choco; SameSite=None; Secure";
