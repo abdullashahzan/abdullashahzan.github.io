@@ -29,6 +29,11 @@ html {
     color: rgba(245, 245, 245, 0.6);
 }
 
+.loadingScreen a {
+    color: #E30B5C;
+    text-decoration: none;
+}
+
 .mynavbar {
     position: absolute;
     top: 0;
