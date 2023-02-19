@@ -13,10 +13,19 @@ main section h1{
 }
 
 main section .btn {
-    padding: 0.8rem 2rem;
+    padding: 1rem;
     margin: 1rem;
     font-size: 1.4rem;
     transition: 0.2s all linear;
+}
+
+.btn1, .btn2, .btn3, .btn4, .btn5, .btn6 {
+    width: 5rem;
+}
+
+main section .tbtn {
+    display: none;
+    width: 90%;
 }
 
 .animate{
@@ -48,7 +57,7 @@ main section .scoreboard {
 }
 
 .gifdiv img {
-    width: 70%;
+    width: 40%;
     height: auto;
 }
 
@@ -60,4 +69,18 @@ main section .scoreboard {
 .lostgif img {
     width: 40%;
     height: auto;
+}
+
+.version {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0 10px;
+}
+
+.by {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
 }
