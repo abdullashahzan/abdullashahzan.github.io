@@ -98,7 +98,7 @@ function check(n) {
             msg.innerHTML = "Number 6 was killed";
         }
     } if (numbers.length === 1) {
-        tries = 0
+        tries = 1
         msg.innerHTML = "Congratulations you won!!";
         main.style.background = "#d4af37"
         main.style.color = "white"
