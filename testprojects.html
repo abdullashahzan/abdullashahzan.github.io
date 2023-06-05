@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"
+        integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg=="
+        crossorigin="anonymous"></script>
+    <title>Portfolio | Abdulla Shahzan</title>
+    <link rel="icon" href="./gallery/pentagon.png" type="image/icon type" class="icon">
+    <link rel="stylesheet" href="./static/test.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Bootstrap Font Icon CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Pacifico">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Handlee">
+</head>
+
+<body style="overflow: hidden;">
+    <main>
+        <nav>
+            <i class="bi bi-list burger"></i>
+        </nav>
+        <div class="overlayNav">
+            <i class="bi bi-x-lg cross"></i>
+            <ul>
+                <li><a href="./test.html"><i class="bi bi-house-fill"></i> Home</a></li>
+                <li><a href="./testabout.html"><i class="bi bi-file-bar-graph"></i> About</a></li>
+                <li><a href=""><i class="bi bi-file-earmark-medical-fill"></i> Achievements</a></li>
+            </ul>
+        </div>
+
+        <section class="projectpage row container-fluid m-0 p-0">
+            <h1 class="heading">My Projects</h1>
+            <div class="col-lg-6 articleContainer">
+                <article>
+                    <h2>Welcome to my project page! I am excited to share with you my work. To learn more about my
+                        projects visit <a href="https://github.com/abdullashahzan" class="githublink">my github page</a>.</h2>
+                    <a type="button" onclick="document.querySelector('.myProjects').scrollIntoView()" class="getStarted">Let's get started...</a>
+                </article>
+            </div>
+            <div class="col-lg-6 imgContainer"><img src="./gallery/illustrations/Organizing projects-rafiki.png"
+                    alt="face"></div>
+        </section>
+
+        <section class="myProjects row container-fluid m-0 p-0">
+            <div class="col-12 col-md-12 col-lg-8 myProjectCards">
+                <div class="card">
+                    <div class="container-fluid row">
+                        <div class="col-lg-6 col-md-6">
+                            <h1 title="Image classification on custom dataset">Image classification on custom dataset</h1>
+                            <hr>
+                            <p>A TensorFlow model which can classify different fruits based on their colours, shapes and
+                                sizes.</p>
+                            <div class="bottomPart"><a
+                                    href="https://github.com/abdullashahzan/colab_notebooks/blob/main/TensorFlow_image_classification.ipynb">Learn
+                                    more about this on GitHub</a></div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 projectImg">
+                            <img src="./gallery/projects/fruitClassification.jpg" alt="fruits">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Text recognition and extraction using opencv">Text recognition and extraction using opencv</h1>
+                    <hr>
+                    <p>The above algorithm uses OpenCV and Pytesseract to identify and extract text.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/camera_to_txt_file_computer_vision_source_code.py">Learn
+                            more about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="ML based prediction and recommendation model">ML based prediction and recommendation model</h1>
+                    <hr>
+                    <p>Algorithms which can predict an output based on the provided data and suggest new data.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/colab_notebooks/blob/main/generalAlgorithms.ipynb">Learn
+                            more about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-8 myProjectCards">
+                <div class="card">
+                    <div class="container-fluid row">
+                        <div class="col-12 col-md-6">
+                            <h1 title="Text recognition algortihm using Dense and Conv2D layers">Text recognition algortihm using Dense and Conv2D layers</h1>
+                            <hr>
+                            <p>An algorithm that can recognize text that is either in a form of an array or an image.
+                            </p>
+                            <div class="bottomPart"><a
+                                    href="https://github.com/abdullashahzan/colab_notebooks/blob/main/textRecognition.ipynban/colab_notebooks/blob/main/TensorFlow_image_classification.ipynb">Learn
+                                    more about this on GitHub</a></div>
+                        </div>
+                        <div class="col-12 col-md-6 projectImg">
+                            <img src="./gallery/projects/numPrediction.jpg" alt="fruits">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-8 myProjectCards">
+                <div class="card">
+                    <div class="container-fluid row">
+                        <div class="col-12 col-md-6">
+                            <h1 title="Extracting and visualizing stock data (An IBM project)">Extracting and visualizing stock data (An IBM project)</h1>
+                            <hr>
+                            <p>Using BeautifulSoup and pandas to extract and display stock data.</p>
+                            <div class="bottomPart"><a
+                                    href="https://github.com/abdullashahzan/IBM/blob/main/Final%20Assignment.ipynb">Learn
+                                    more
+                                    about this on GitHub</a></div>
+                        </div>
+                        <div class="col-12 col-md-6 projectImg">
+                            <img src="./gallery/projects/ibm.jpg" alt="web">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="AI chatbot using TensorFlow and Tkinter (GUI)">AI chatbot using TensorFlow and Tkinter (GUI)</h1>
+                    <hr>
+                    <p>A basic chatbot that keeps getting better as you talk to it.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/RemV2.py">Learn more about this
+                            on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Object tracking algorithm using OpenCV">Object tracking algorithm using OpenCV</h1>
+                    <hr>
+                    <p>An algorithm that utilizes computer vision and MediaPipe (Google's library) to track object which
+                        in this case is your hand.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/HandTracking.py">Learn more
+                            about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-8 myProjectCards">
+                <div class="card">
+                    <div class="container-fluid row">
+                        <div class="col-12 col-md-6">
+                            <h1 title="Django e-commerce web application">Django e-commerce web application</h1>
+                            <hr>
+                            <p>An online shopping website built using django framework.
+                            </p>
+                            <div class="bottomPart"><a
+                                    href="https://github.com/abdullashahzan/Online-Shopping-website">Learn
+                                    more about this on GitHub</a></div>
+                        </div>
+                        <div class="col-12 col-md-6 projectImg">
+                            <img src="./gallery/projects/p1.png" alt="ecommerce">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-12 col-lg-8 myProjectCards">
+                <div class="card">
+                    <div class="container-fluid row">
+                        <div class="col-12 col-md-6">
+                            <h1 title="A Python algorithm to solve mazes">A Python algorithm to solve mazes</h1>
+                            <hr>
+                            <p>A python algorithm that takes a matrix as input maze and solves using basic calculations.
+                            </p>
+                            <div class="bottomPart"><a
+                                    href="https://github.com/abdullashahzan/colab_notebooks/blob/main/maze.ipynb">Learn
+                                    more
+                                    about this on GitHub</a></div>
+                        </div>
+                        <div class="col-12 col-md-6 projectImg">
+                            <img src="./gallery/projects/maze.jpg" alt="maze">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Face detection and image segmentation using OpenCV">Face detection and image segmentation using OpenCV</h1>
+                    <hr>
+                    <p>This algorithm uses haarcascade and OpenCV to recognize objects which can be then segmented using
+                        provided source code.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/computer_vision_sourcecodes.py">Learn
+                            more about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Wikipedia clone using Django framework">Wikipedia clone using Django framework</h1>
+                    <hr>
+                    <p>A wikipedia clone built by using django framework. Performs operations such as read, write,
+                        update or search an article.</p>
+                    <div class="bottomPart"><a href="https://github.com/abdullashahzan/Online-Shopping-website">Learn
+                            more about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="PDF translator using python, tkinter (for gui) and google translate">PDF translator using python, tkinter (for gui) and google translate</h1>
+                    <hr>
+                    <p>An application that can extract and translate text from any PDF file.</p>
+                    <div class="bottomPart"><a href="https://github.com/abdullashahzan/PDFtranslator">Learn more about
+                            this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Online video and audio downloader">Online video and audio downloader</h1>
+                    <hr>
+                    <p>An application that can download any YouTube video or audio on providing it's link.</p>
+                    <div class="bottomPart"><a href="https://github.com/abdullashahzan/VideoAudioDownloader">Learn more
+                            about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="A python note-making application">A python note-making application</h1>
+                    <hr>
+                    <p>An algorithm where you can create and save your notes using friendly python GUI library, tkinter.
+                    </p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/note_making_app.py">Learn more
+                            about this on GitHub</a></div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 myProjectCards">
+                <div class="card">
+                    <h1 title="Speech controlled python algorithm">Speech controlled python algorithm</h1>
+                    <hr>
+                    <p>An algorithm that uses human speech to control and perform basic tasks.</p>
+                    <div class="bottomPart"><a
+                            href="https://github.com/abdullashahzan/myprojects/blob/main/speech_recognizer.py">Learn
+                            more about this on GitHub</a></div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer class="d-flex justify-content-center align-items-center py-3 container-fluid row m-0">
+        <div class="col-md-6 d-flex justify-content-center align-items-center rights">
+            <h5><span>© </span> Copyright 2023</h5>
+        </div>
+
+        <ul class="nav col-md-6 justify-content-center align-items-center list-unstyled d-flex px-5">
+            <li class="ms-3"><a target="_blank" href="https://twitter.com/AbdullaShahzan"><i
+                        class="bi bi-twitter"></i></a></li>
+            <li class="ms-3"><a target="_blank" href="https://www.instagram.com/abd.sz_/"><i
+                        class="bi bi-instagram"></i></a></li>
+            <li class="ms-3"><a target="_blank" href="https://github.com/abdullashahzan"><i
+                        class="bi bi-github"></i></a></li>
+            <li class="ms-3"><a target="_blank" href="https://www.linkedin.com/in/abdulla-s-03b00a226/"><i
+                        class="bi bi-linkedin"></i></a></li>
+            <li class="ms-3"><a target="_blank" href="https://wa.me/966578183580"><i class="bi bi-whatsapp"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+
+    <!--Loading screen-->
+    <div class="loadingScreen">
+        <div class="maindiv">
+            <h1>"My Projects"</h1>
+            <p>Loading contents please wait...</p><br>
+            <a href="./russian-roulette/index.html" target="_blank"><i class="bi bi-controller"></i> Play a game till
+                then?</a>
+        </div>
+    </div>
+
+    <script>
+        var typing = new Typed(".text", {
+            strings: ["data scientist.", "ML engineer.", "web designer.", "software developer."],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true,
+        });
+    </script>
+    <script src="./static/test.js"></script>
+    <!---->
+    <script>
+        $(window).on("load", function () {
+            setTimeout(() => {
+                $(".loadingScreen").fadeOut("slow");
+                $("body").removeAttr("style");
+            }, 1000);
+
+        });
+        $(".arrow-left").click(function () {
+            var leftPos = $('.slidingprojects').scrollLeft();
+            $(".slidingprojects").animate({ scrollLeft: leftPos - 500 }, 200);
+        });
+
+        $(".arrow-right").click(function () {
+            var leftPos = $('.slidingprojects').scrollLeft();
+            $(".slidingprojects").animate({ scrollLeft: leftPos + 500 }, 200);
+        });
+    </script>
+</body>
+
+</html>
