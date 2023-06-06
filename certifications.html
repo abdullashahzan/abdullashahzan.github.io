@@ -30,29 +30,67 @@
         <div class="overlayNav">
             <i class="bi bi-x-lg cross"></i>
             <ul>
+                <li><a href="./index.html"><i class="bi bi-house-fill"></i> Home</a></li>
                 <li><a href="./about.html"><i class="bi bi-file-earmark-person-fill"></i> About</a></li>
                 <li><a href="./projects.html"><i class="bi bi-file-bar-graph"></i> Projects</a></li>
-                <li><a href="./certifications.html"><i class="bi bi-file-earmark-medical-fill"></i> Certifications</a></li>
             </ul>
         </div>
 
-        <section class="homepage row container-fluid m-0 p-0 getBlurred">
-            <div class="detailsPart col-12 col-lg-6 row-col">
+        <section class="projectpage row container-fluid m-0 p-0 getBlurred">
+            <h1 class="heading specialheading">My Achievements</h1>
+            <div class="col-lg-6 articleContainer">
                 <article>
-                    <h1>Hello, there!</h1>
-                    <hr>
-                    <p>It's me <strong title="Hello :)">Abdulla Shahzan</strong>! I’m a <span class="myspan"></span>
-                        <span class="text"></span>
-                        <br>Welcome to my portfolio! Here you’ll find a showcase of my work and skills, as well as
-                        information about my background and experience.
-                    </p>
-                    <br>
-                    <a href="./gallery/cv.pdf" download title="Download resume" class="resume"><i class="bi bi-file-earmark-arrow-down-fill"></i>
-                        Resumé</a>
+                    <h2>Welcome! This page contains all my certificates that I have earned throughout my journey of
+                        becoming a full fledged computer geek.</h2>
+                    <a type="button" onclick="document.querySelector('.certificates').scrollIntoView()"
+                        class="getStarted">Let's get started...</a>
                 </article>
             </div>
-            <div class="backgroundImg col-12 col-lg-6 col-md-7"><img
-                    src="./gallery/illustrations/Back to work-cuate.png" alt="welcome">
+            <div class="col-lg-6 imgContainer"><img src="./gallery/illustrations/Leader-rafiki.png" alt="face"></div>
+        </section>
+
+        <div class="seperator">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- Humble Flex -->
+        <section class="certificates row container-fluid m-0 p-3">
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/scientificComputingPython.jpg" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/PythonProjectForDataScience_page-0001.jpg" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/digitalgarage_certificate.jpg" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/hacerrankcertificate.png" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/kkucpcertificate.jpg" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/greatlearningcertificate.jpg" alt="certificate">
+            </div>
+            </div>
+            <div class="col-lg-6 certificate reveal">
+                <img src="./certificates/responsiveWebDesignCertificate.jpg" alt="certificate">
             </div>
         </section>
 
@@ -70,7 +108,7 @@
                 <li></li>
             </ul>
         </div>
-        <!--Kachao!-->
+
         <section class="secondPage row container-fluid m-0 p-0">
             <div class="col-lg-6 col-md-6"><img src="./gallery/illustrations/Coffee shop-pana.png" alt="coffee"></div>
             <div class="col-lg-6 col-md-6">
@@ -88,17 +126,17 @@
         <div class="container p-4">
             <section class="mb-4 links">
                 <h2 class="connectWithMe">Connect with me via: </h2>
-                <a class="btn" href="https://twitter.com/AbdullaShahzan"
-                    target="_blank" role="button"><i class="bi bi-twitter"></i></a>
+                <a class="btn" href="https://twitter.com/AbdullaShahzan" target="_blank" role="button"><i
+                        class="bi bi-twitter"></i></a>
 
-                <a class="btn" href="https://github.com/abdullashahzan"
-                    target="_blank" role="button"><i class="bi bi-github"></i></a>
+                <a class="btn" href="https://github.com/abdullashahzan" target="_blank" role="button"><i
+                        class="bi bi-github"></i></a>
 
-                <a class="btn" href="https://www.instagram.com/abd.sz_/"
-                    target="_blank" role="button"><i class="bi bi-instagram"></i></a>
+                <a class="btn" href="https://www.instagram.com/abd.sz_/" target="_blank" role="button"><i
+                        class="bi bi-instagram"></i></a>
 
-                <a class="btn" target="_blank"
-                    href="https://www.linkedin.com/in/abdulla-shahzan-03b00a226/" role="button"><i class="bi bi-linkedin"></i></a>
+                <a class="btn" target="_blank" href="https://www.linkedin.com/in/abdulla-shahzan-03b00a226/"
+                    role="button"><i class="bi bi-linkedin"></i></a>
             </section>
             <hr>
             <section class="text-middle rights">
@@ -108,27 +146,16 @@
 
 
 
-
-
-
     <!--Loading screen-->
     <div class="loadingScreen">
         <div class="maindiv">
-            <h1>"Welcome!!"</h1>
+            <h1>"My Achievements"</h1>
             <p>Loading contents please wait...</p><br>
             <a href="./russian-roulette/index.html" target="_blank"><i class="bi bi-controller"></i> Play a game till
                 then?</a>
         </div>
     </div>
 
-    <script>
-        var typing = new Typed(".text", {
-            strings: ["data scientist.", "ML engineer.", "web designer.", "software developer."],
-            typeSpeed: 50,
-            backSpeed: 50,
-            loop: true,
-        });
-    </script>
     <script src="./static/script.js"></script>
     <!---->
     <script>
