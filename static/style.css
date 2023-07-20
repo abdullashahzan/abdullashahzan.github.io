@@ -401,6 +401,11 @@ main .burger {
     margin-top: 5rem;
 }
 
+.projectpage .articleContainer a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
 .projectpage article {
     margin: 2rem 0 2rem 5rem;
 }
@@ -801,6 +806,46 @@ main .burger {
     .projectpage .specialheading {
         font-size: 2.5rem;
         padding-top: 4rem;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .overlayNav a{
+        font-size: 7rem;
+        margin: 5rem;
+        margin-left: 2rem;
+    }
+
+    .homepage .detailsPart article h1 {
+        font-size: 7rem;
+    }
+
+    .homepage .detailsPart article p {
+        font-size: 2rem;
+    }
+
+    .homepage .detailsPart article a {
+        font-size: 2rem;
+    }
+
+    .aboutme {
+        font-size: 2rem;
+    }
+
+    .aboutme .aboutImg img {
+        height: 10rem;
+    }
+
+    .projectpage .articleContainer h2 {
+        font-size: 2.4rem;
+    }
+
+    .myProjects .myProjectCards h1 {
+        font-size: 4rem;
+    }
+
+    .myProjects .myProjectCards p {
+        font-size: 2rem;
     }
 }
 
