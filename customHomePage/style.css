@@ -7,48 +7,6 @@
     --fontThree: 'Raleway';
 }
 
-.loadingScreen {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--colorThree);
-    z-index: 100000;
-    text-align: center;
-}
-
-.loadingScreen h1 {
-    color: var(--colorTwo);
-    font-size: 7rem;
-    font-family: var(--fontTwo);
-    padding: 2rem 0;
-}
-
-.loadingScreen p {
-    color: var(--colorTwo);
-    font-family: var(--fontOne);
-    margin-bottom: 4rem;
-}
-
-.loadingScreen a {
-    color: var(--colorThree);
-    font-family: var(--fontOne);
-    background-color: var(--colorTwo);
-    padding: 1rem 2rem;
-    text-align: center;
-    text-decoration: none;
-    transition: 0.1s linear;
-}
-
-.loadingScreen a:hover {
-    background-color: var(--colorOne);
-    color: var(--colorThree);
-}
-
 .navbarDiv {
     width: 100%;
     height: 10vh;
@@ -64,6 +22,27 @@
     padding: 1rem 2rem;
     font-size: 2rem;
     text-shadow: 2px 2px 4px var(--colorTwo);
+    z-index: 1000;
+}
+
+.overlayContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    background-color: #00000091;
+    width: 100%;
+    height: 100%;
+    transition: 0.2s ease-in-out;
+}
+
+#overlay {
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .pageOne {

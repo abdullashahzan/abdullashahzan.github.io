@@ -21,13 +21,22 @@
 <body style="overflow: hidden;">
     <main>
         <section class="pageOne">
+            <div class="overlayContainer">
+                <div class="overlay">
+                    <form id="searchForm" action="https://www.google.com/search" method="GET" target="_blank">
+                        <input type="text" name="q" placeholder="Search Google">
+                        <button type="submit">Search</button>
+                      </form>
+                </div>
+            </div>
+
             <div class="navbarDiv">
-                <i class="bi bi-search"></i>
+                <i onclick="openCloseOverlay()" class="overlayIcon bi bi-search"></i>
             </div>
 
             <div class="timeField">
                 <div class="timeDisplay">
-                    <div class="hour"></div>
+                    <div class="hour">Hi!</div>
                     <div class="minute"></div>
                 </div>
             </div>
@@ -48,26 +57,6 @@
             </div>
         </section>
     </main>
-
-    <!--Loading screen-->
-    <div class="loadingScreen">
-        <div class="maindiv">
-            <h1>"Welcome!!"</h1>
-            <p>Loading contents please wait...</p><br>
-            <a href="./russian-roulette/index.html" target="_blank"><i class="bi bi-controller"></i> Play a game till
-                then?</a>
-        </div>
-    </div>
-
-    <script>
-        $(window).on("load", function () {
-            setTimeout(() => {
-                $(".loadingScreen").fadeOut("slow");
-                $("body").removeAttr("style");
-            }, 500);
-        });
-    </script>
-
 
     <script src="./script.js"></script>
 </body>
