@@ -1,10 +1,69 @@
 :root {
     --colorOne: #292b2c;
-    --colorTwo: #f0ad4e;
+    --colorTwo: #9457eb;
     --colorThree: #f7f7f7;
     --fontOne: 'Handlee';
     --fontTwo: 'Pacifico';
     --fontThree: 'Raleway';
+}
+
+.loadingScreen {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorThree);
+    z-index: 100000;
+    text-align: center;
+}
+
+.loadingScreen h1 {
+    color: var(--colorTwo);
+    font-size: 7rem;
+    font-family: var(--fontTwo);
+    padding: 2rem 0;
+}
+
+.loadingScreen p {
+    color: var(--colorTwo);
+    font-family: var(--fontOne);
+    margin-bottom: 4rem;
+}
+
+.loadingScreen a {
+    color: var(--colorThree);
+    font-family: var(--fontOne);
+    background-color: var(--colorTwo);
+    padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.1s linear;
+}
+
+.loadingScreen a:hover {
+    background-color: var(--colorOne);
+    color: var(--colorThree);
+}
+
+.navbarDiv {
+    width: 100%;
+    height: 10vh;
+    color: var(--colorThree);
+    position: relative;
+    background: linear-gradient(to bottom, black, transparent);
+}
+
+.navbarDiv i {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    text-shadow: 2px 2px 4px var(--colorTwo);
 }
 
 .pageOne {
@@ -14,12 +73,15 @@
 
 .timeField {
     width: 100%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--colorTwo);
+    color: var(--colorThree);
     font-family: var(--fontThree);
     font-size: 12rem;
+    opacity: 0.7;
+    text-shadow: 5px 5px 4px var(--colorTwo);
 }
 
 .hour {
@@ -31,46 +93,6 @@
     text-align: center;
 }
 
-.searchField {
-    width: 100%;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-
-.searchField #inputField {
-    border: 2px solid var(--colorTwo);
-    border-radius: 20rem;
-    background: none;
-    padding: 0.5rem 1.5rem;
-    width: 40vh;
-    height: 5vh;
-    font-size: 1.5rem;
-    color: var(--colorThree);
-    font-family: var(--fontThree);
-}
-
-.searchField #inputField:focus {
-    outline: none;
-}
-
-.searchField .searchButton {
-    margin: 2rem 1rem;
-}
-
-.searchField #searchButton {
-    padding: 0.5rem 1rem;
-    margin: 0 0.2rem;
-    background: var(--colorTwo);
-    border: none;
-    border-radius: 0.4rem;
-    width: 40%;
-    text-align: center;
-    font-family: var(--fontThree);
-    font-weight: 400;
-    font-size: 1.5rem;
-}
-
 .bubblesDiv {
     width: 100%;
     height: 100vh;
@@ -78,7 +100,12 @@
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: var(--colorOne);
+    background-image: url("../gallery/wallpapers/black_wallpaper.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    filter: blur(2px);
+    transform: scale(1.2);
 }
 
 .circles {
@@ -194,3 +221,4 @@
     }
 
 }
+
