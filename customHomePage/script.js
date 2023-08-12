@@ -3,6 +3,7 @@ const minute = document.querySelector(".minute");
 const overlay = document.querySelector(".overlayContainer");
 const overlayIcon = document.querySelector(".overlayIcon");
 const timeField = document.querySelector(".timeField");
+const bubblesDiv = document.querySelector(".bubblesDiv");
 var overlayStatus = 0;
 
 function setTime() {
@@ -23,12 +24,14 @@ function openCloseOverlay() {
         overlayIcon.classList.remove("bi-search");
         overlayIcon.classList.add("bi-x-circle");
         timeField.style.filter = "blur(10px)";
+        bubblesDiv.style.filter = "blur(1px)";
     } else {
         overlayStatus = 0;
         overlay.style.opacity = 0
         overlayIcon.classList.remove("bi-x-circle");
         overlayIcon.classList.add("bi-search");
         timeField.style.filter = "blur(0px)";
+        bubblesDiv.style.filter = "blur(0px)";
     }
 }
 

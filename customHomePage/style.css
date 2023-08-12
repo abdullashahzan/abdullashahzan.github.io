@@ -19,7 +19,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    padding: 1rem 2rem;
+    padding: 2rem 3rem;
     font-size: 2rem;
     text-shadow: 2px 2px 4px var(--colorTwo);
     z-index: 1000;
@@ -35,14 +35,46 @@
     width: 100%;
     height: 100%;
     transition: 0.2s ease-in-out;
-}
-
-#overlay {
-    width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding-top: 7rem;
+}
+
+.overlayContainer h1 {
+    color: var(--colorThree);
+    font-family: var(--fontTwo);
+    text-align: center;
+    margin: 4rem 0;
+    font-size: 5rem;
+}
+
+.overlay .inputField {
+    background: none;
+    border: 2px solid var(--colorThree);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-family: var(--fontThree);
+    width: 100%;
+    color: var(--colorThree);
+    transition: 0.2s ease-in-out;
+}
+
+.inputField:focus {
+    outline: none;
+    box-shadow: 4px 4px 5px var(--colorTwo);
+}
+
+.overlay .submitButton {
+    border: none;
+    background-color: var(--colorTwo);
+    margin: 1rem 0;
+    color: var(--colorThree);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+    font-family: var(--fontThree);
+    font-size: 1.2rem;
+    width: 50%;
 }
 
 .pageOne {
@@ -83,8 +115,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    filter: blur(2px);
-    transform: scale(1.2);
 }
 
 .circles {
