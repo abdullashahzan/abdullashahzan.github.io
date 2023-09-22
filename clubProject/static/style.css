@@ -41,7 +41,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 1.5rem 2rem;
+    margin: 2rem 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -52,12 +52,30 @@ body {
 }
 
 .logo img {
-    height: 15vh;
+    height: 10vh;
     width: auto;
 }
 
-.quote {
+.specialClass {
     position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    vertical-align: middle;
+}
+
+.speciallogo {
+    position: relative;
+}
+
+.speciallogo img {
+    height: 10vh;
+    width: auto;
+    border-radius: 0.5rem;
+}
+
+.quote {
+    position: relative;
     top: 0;
     right: 0;
     color: white;
@@ -263,7 +281,7 @@ body {
 
     .quote {
         font-size: 2rem;
-        top: 6rem;
+        top: 7rem;
         right: 0;
         margin: 1rem;
         text-align: right;
