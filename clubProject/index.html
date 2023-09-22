@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KKU Saudi National Day</title>
+    <!-- Icon -->
+    <link rel="icon" href="./misc/logo.png" type="image/icon type">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./static/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+        integrity="sha384-b6lVK+yci+bfDmaY1u0zE8YYJt0TZxLEAFyYSLHId4xoVvsrQu3INevFKo+Xir8e" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cairo:wght@200&family=Dancing+Script&family=Noto+Serif:wght@700&family=Urbanist&display=swap"
+        rel="stylesheet">
+
+    <!-- Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+    <div class="loading-screen">
+        <div class="loading-content">
+            <h1>Welcome!</h1>
+        </div>
+    </div>
+
+    <div class="logos">
+        <div class="logo"><img src="./misc/logo.png" alt="KKU logo"></div>
+        <div class="logo"><img src="./misc/clubLogo.png" alt="KKU logo"></div>
+    </div>
+
+    <h1 class="quote">احتفالا بتوحيد المملكه, حيث التاريخ يتقدم يدا بيد</h1>
+
+    <div class="background-slider">
+        <div class="backgroundimage">
+            <div class="overlay"></div>
+            <article class="bg animate__animated animate__fadeInLeftBig">
+                <div class="typing-animation">
+                    <h1 class="animate__animated animate__fadeInLeftBig">Happy 93rd Saudi <br> National Day!</h1>
+                    <p id="typed-text"></p>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <svg class="topAnimatedSVG animate__animated animate__fadeInTop" xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="xMidYMin slice" viewBox="24 105 156 95">
+        <defs>
+            <style type="text/css">
+                @keyframes rotate {
+                    100% {
+                        transform: rotate(360deg)
+                    }
+                }
+
+                .top-outer {
+                    transform-origin: 63px 69px;
+                    animation: rotate 30s linear infinite;
+                }
+
+                .top-inner {
+                    transform-origin: 73px 69px;
+                    animation: rotate 20s linear infinite;
+                }
+
+                .bottom-outer {
+                    transform-origin: 134px 222px;
+                    animation: rotate 30s linear infinite;
+                }
+
+                .bottom-inner {
+                    transform-origin: 134px 222px;
+                    animation: rotate 20s linear infinite;
+                }
+            </style>
+        </defs>
+        <rect x="0" y="0" width="300" height="300" fill="#344e41" />
+        <path class="top-outer" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+            d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z" />
+        <path class="top-inner" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+            d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z" />
+        <path class="bottom-outer" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+            d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z" />
+        <path class="bottom-inner" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+            d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z" />
+    </svg>
+
+    <div class="talkToBot row">
+        <div class="col-12 col-md-6">
+            <article>
+                <h1>Talk with our AI chatbot.</h1>
+                <p class="paragraph d-none d-lg-block">
+                    Meet our knowledgeable virtual assistant, specially trained to enlighten you about the rich
+                    heritage, history, and culture of Saudi Arabia. As we celebrate Saudi National Day, our AI is your
+                    gateway to discovering the fascinating stories, traditions, and landmarks that make Saudi Arabia
+                    unique.
+                    <br>
+                    Whether you have questions about historical events, cultural practices, or simply want to explore
+                    the essence of Saudi Arabia, our AI is here to guide you. Feel free to ask, and let's embark on a
+                    journey through the vibrant tapestry of Saudi Arabian heritage.
+                </p>
+            </article>
+        </div>
+        <div class="col-12 col-md-6">
+            <div class="chat-container container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="chat-messages" id="chatMessages">
+                            Happy National Day! Do you want to know more about Saudi Arabian culture?
+                        </div>
+                    </div>
+                </div>
+                <div class="row chat-input">
+                    <div class="col-10">
+                        <input type="text" id="messageInput" placeholder="Type here..."
+                            onkeypress="handleKeyPress(event)">
+                    </div>
+                    <div class="col-2">
+                        <button id="sendButton" class="btn btn-light" onclick="generateResponse()"><i
+                                class="bi bi-arrow-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <svg class="animatedSVG" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMin slice"
+            viewBox="24 105 156 95">
+            <defs>
+                <style type="text/css">
+                    @keyframes rotate {
+                        100% {
+                            transform: rotate(360deg)
+                        }
+                    }
+
+                    .top-outer {
+                        transform-origin: 63px 69px;
+                        animation: rotate 30s linear infinite;
+                    }
+
+                    .top-inner {
+                        transform-origin: 73px 69px;
+                        animation: rotate 20s linear infinite;
+                    }
+
+                    .bottom-outer {
+                        transform-origin: 134px 222px;
+                        animation: rotate 30s linear infinite;
+                    }
+
+                    .bottom-inner {
+                        transform-origin: 134px 222px;
+                        animation: rotate 20s linear infinite;
+                    }
+                </style>
+            </defs>
+            <rect x="0" y="0" width="300" height="300" fill="#f7f7f7" />
+            <path class="top-outer" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+                d="M68 1c23,0 67,17 69,39 4,38 5,52 -5,69 -20,36 -68,46 -120,-9 -27,-28 -7,-101 56,-99z" />
+            <path class="top-inner" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+                d="M69 22c33,-7 52,21 54,37 3,26 -1,28 -8,40 -15,25 -48,25 -85,-14 -19,-20 -4,-53 39,-63z" />
+            <path class="bottom-outer" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+                d="M158 158c30,13 56,50 44,75 -9,18 -22,46 -42,55 -20,10 -48,2 -73,-19 -29,-25 -27,-55 -9,-79 17,-22 43,-48 80,-32z" />
+            <path class="bottom-inner" fill="#a3b18a" stroke="#a3b18a" stroke-width="1"
+                d="M136 180c32,-9 45,13 46,29 3,27 8,29 0,42 -14,25 -52,24 -79,0 -21,-18 -2,-61 33,-71z" />
+        </svg>
+
+    </div>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // Loading screen
+            $(window).on('load', function () {
+                $('.loading-screen').slideUp(1500);
+            });
+        });
+    </script>
+
+    <!-- JS -->
+    <script src="./static/script.js"></script>
+
+    <!-- Bootstrap Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
