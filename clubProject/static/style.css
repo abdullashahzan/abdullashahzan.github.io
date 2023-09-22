@@ -1,0 +1,317 @@
+:root {
+    --primaryColor: #344e41;
+    --primaryColor2: #3a5a40;
+    --secondaryColor: #588157;
+    --secondaryColor2: #a3b18a;
+    --tertiaryColor: #dad7cd;
+
+    --shadow: #212529;
+
+    --font1: "Noto Serif";
+    --font2: "Urbanist";
+    --font3: "Dancing Script";
+    --font4: "Abril Fatface";
+    --font5: "Cairo";
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.loading-screen {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--tertiaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.loading-content h1 {
+    font-family: var(--font4);
+    font-size: 5rem;
+}
+
+.logos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1.5rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    padding: 0 1rem;
+}
+
+.logo img {
+    height: 15vh;
+    width: auto;
+}
+
+.quote {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    font-family: var(--font5);
+    margin: 2rem 3rem;
+    font-weight: bold;
+    transition: 2s all linear;
+}
+
+.background-slider {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.background-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    top: 0;
+    left: 100%; /* Initially position it outside the viewport */
+    transition: left 1.8s ease-in-out;
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide-left {
+    left: 0; /* Slide it into view */
+}
+
+
+.backgroundimage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    position: relative;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.backgroundimage .overlay {
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100%;
+    background: linear-gradient(to bottom, #212529c7, #2125297c);
+    z-index: 0;
+}
+
+.backgroundimage article {
+    position: absolute;
+    bottom: 2rem;
+    left: 0rem;
+    padding: 0 2rem;
+    color: var(--tertiaryColor);
+    width: 70%;
+    z-index: 1;
+    background-color: #344e4179;
+}
+
+.backgroundimage article h1 {
+    font-family: var(--font4);
+    font-size: 6rem;
+}
+
+.backgroundimage article p {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+}
+
+.fade-in {
+    animation: fade-in 3s ease-in;
+}
+
+@keyframes fade-in {
+    0% {
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+}
+
+.aiVideo {
+    min-height: 100vh;
+    background-color: var(--tertiaryColor);
+}
+
+.aiVideo h1 {
+    font-family: var(--font1);
+    font-size: 4rem;
+}
+
+.aiVideo p {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+}
+
+.talkToBot {
+    min-height: 100vh;
+    padding: 6rem 5rem;
+    position: relative;
+}
+
+.talkToBot h1 {
+    font-family: var(--font4);
+    font-size: 4rem;
+}
+
+.talkToBot .paragraph {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+    color: var(--shadow);
+    margin-top: 0rem;
+}
+
+.chat-container {
+    background-color: var(--primaryColor2);
+    max-height: 70vh;
+    border-radius: 2rem;
+    padding: 2rem;
+    box-shadow: 4px 4px 10px var(--shadow);
+}
+
+.chat-messages {
+    height: 50vh;
+    margin-bottom: 2rem;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    overflow-y: auto;
+    color: var(--tertiaryColor);
+}
+
+.chat-input {
+    width: 100%;
+    font-family: var(--font2);
+    font-size: 1.3rem;
+    padding: 0 1rem;
+}
+
+.chat-input input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 2rem;
+}
+
+.chat-input input:focus {
+    outline: none;
+}
+
+#sendButton {
+    width: auto;
+    height: 100%;
+    font-size: 1rem;
+    font-family: var(--font2);
+    border-radius: 2rem;
+}
+
+.topAnimatedSVG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    min-height: 100vh;
+}
+
+.animatedSVG {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    min-height: 100vh;
+    height: auto;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    margin-right: 2rem;
+}
+
+/* Target the scrollbar thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+    background-color: var(--primaryColor);
+}
+
+.animate__animated {
+    transition: 0.5s all ease-in;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 10vh;
+    }
+
+    .quote {
+        font-size: 2rem;
+        top: 6rem;
+        right: 0;
+        margin: 1rem;
+        text-align: right;
+    }
+
+    .backgroundimage {
+        background-attachment: local;
+    }
+
+    .backgroundimage article h1 {
+        font-size: 3rem;
+    }
+
+    svg {
+        width: 100%;
+        height: auto;
+    }
+
+    video {
+        padding: 2rem 1rem 0 1rem;
+        width: 100%;
+        height: auto;
+    }
+
+    .aiVideo h1 {
+        font-size: 3rem;
+        margin-top: 1rem;
+    }
+
+    .aiVideo p {
+        font-size: 1rem;
+    }
+
+    .talkToBot {
+        padding: 2rem 1rem;
+    }
+
+    .talkToBot article h1 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .chat-container {
+        height: 70vh;
+    }
+
+    .chat-messages {
+        height: 50vh;
+    }
+
+}
